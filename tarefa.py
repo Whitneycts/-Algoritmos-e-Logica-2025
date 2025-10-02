@@ -35,5 +35,5 @@ print(f"Preço Base por kg: R$ {P_base:.2f}")
 print(f"Preço Final por kg: R$ {P_final_kg:.2f}")
 print(f"Preço Final Total do lote: R$ {Preco_Total_Final:.2f}")
 
-aaa
+
 
