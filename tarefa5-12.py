@@ -9,12 +9,14 @@ pecas_fora_tolerancia = 0
 if numero_total_de_pecas <= 0:
     print('O número de peças deve ser um inteiro positivo.')
 else:
-    for i in range(1, numero_total_de_pecas + 1):
+    i = 1
+    while i <= numero_total_de_pecas:
         tamanho = float(input(f'Tamanho medido da peça {i} (cm): '))
         soma_dos_tamanhos += tamanho
         desvio = abs(tamanho - TAMANHO_IDEAL)
         if desvio > TOLERANCIA:
             pecas_fora_tolerancia += 1
+        i += 1
 
     media_tamanho = soma_dos_tamanhos / numero_total_de_pecas
 
@@ -27,3 +29,6 @@ else:
 
     print(f'\nMédia de Tamanho das Peças: {media_tamanho:.2f} cm')
     print(f'Quantidade de Peças Fora da Tolerância: {pecas_fora_tolerancia}')
+
+# while: laço que executa um bloco enquanto uma condição for verdadeira.
+# Exemplo: 'while condicao:' repete até que condicao seja False.
