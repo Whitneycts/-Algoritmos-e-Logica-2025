@@ -1,4 +1,3 @@
-from ast import Continue
 import random
 
 # Ele utiliza a função 'random.randint(1, 6)' do módulo 'random' para sortear
